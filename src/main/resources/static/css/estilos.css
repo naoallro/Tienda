@@ -1,0 +1,13 @@
+#titPrincipal {
+    text-align: center;
+    color: lightcoral;
+    background: lightpink;
+}
+
+.parrafoVerde{
+    color: green;
+}
+
+.parrafoRojo {
+    color: red;
+}
