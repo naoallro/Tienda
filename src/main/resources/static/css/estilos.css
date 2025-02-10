@@ -1,13 +1,57 @@
+/*Selector de ID*/
 #titPrincipal {
     text-align: center;
     color: lightcoral;
     background: lightpink;
 }
 
+/*Selector de clases*/
 .parrafoVerde{
-    color: green;
+    color: purple;
 }
 
 .parrafoRojo {
     color: red;
+}
+
+.ejemplo Padding{
+    /*    a los 4 lados*/
+    padding: 10px;
+    /*Arriba/Abajo Izquierda/Derecha*/
+    padding: 10px 20px;
+    /*Arriba-Izquierda/Derecha-Abajo*/
+    padding: 10px 20px 30px;
+    /*Arriba - Derecha - Abajo - Izquierda*/
+    padding: 10px 20px 30px 40px;
+}
+
+/*Selector de elemento*/
+/*p, h1, div{
+    background-color:blanchedalmond ;
+}*/
+
+/*Selectores descendentes*/
+
+/*div p {
+    font-size: 50px;
+}*/
+
+a {
+    font-size: 20px;
+}
+
+a:visited{
+    color: green;
+}
+
+a:hover{
+    color: red;
+    transition: 1s;
+}
+
+a:active{
+    color: wheat;
+    background: lightblue;
+}.form-select {
+
 }
