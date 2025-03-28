@@ -5,8 +5,11 @@
     <head th:replace="layout/plantilla :: head"></head>
     <body>
         <header th:replace="layout/plantilla :: header"></header>
-        
-        <section th:replace = "producto/fragmentos :: editarProducto"/> <!--el fragmento 4 importa el 5 en fragmentos -->
+
+        <section th:replace = "producto/fragmentos :: botonesAgregar"/>
+        <section th:replace = "producto/fragmentos :: listadoProductos"/>
+        <section th:replace = "producto/fragmentos :: agregarProducto"/>
+
 
 
         <footer th:replace="layout/plantilla :: footer"></footer>
