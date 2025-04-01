@@ -12,7 +12,7 @@
             <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
             <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
             <script th:src="@{/js/rutinas.js}" type="text/javascript"></script>
-            
+
     </head>
     <body>
         <header th:fragment="header" class="header">
@@ -36,7 +36,7 @@
                             <li class="nav-item px-2">
                                 <a class="nav-link" th:href="@{/informacion}">[[#{plantilla.informacion}]]</a>
                             </li>
-                             <li class="nav-item dropdown">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" 
                                    data-bs-toggle="dropdown" 
                                    href="#" 
@@ -44,6 +44,8 @@
                                    aria-expanded="false">[[#{plantilla.pruebas}]]</a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
                                     <li><a class="dropdown-item"  th:href="@{/pruebas/listado}">[[#{plantilla.asociaciones}]]</a></li>
+                                    <li><a class="dropdown-item"  th:href="@{/pruebas/listado2}">[[#{plantilla.consultas}]]</a></li>
+
                                 </ul>
                             </li>
                         </ul>

@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/springframework/Controller.java to edit this template
- */
+
 package com.tienda.controller;
 
 import com.tienda.domain.Categoria;
@@ -19,10 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-/**
- *
- * @author naoal
- */
+
 @Controller
 @RequestMapping("/producto")
 public class ProductoController {
@@ -39,6 +33,10 @@ public class ProductoController {
     @RequestMapping("/listado")
     public String page(Model model) {
         List<Producto> productos = productoService.getProductos(false);
+        //List<Producto> productos = productoService.buscarPorExistencias(5);
+        //List<Producto> productos = productoService.buscarPorExistenciasYPrecio(5, 25000.0);
+        
+        
         List<Categoria> listaCategoriasActivas = categoriaService.getCategorias(true);
 
         model.addAttribute("productos", productos);
